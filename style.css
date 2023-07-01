@@ -1,0 +1,67 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.full{
+    width: 80%;
+}
+
+
+.formulario-cadastro{
+    position: relative;
+    background-color: rgb(253, 206, 135);
+    width: 60%;
+    padding: 1rem;
+}
+
+.formulario-cadastro h1{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.formulario-cadastro input[type="text"]{
+    text-transform: uppercase;
+    height: 2rem;
+    text-indent: .4rem;
+
+}
+
+.formulario-cadastro div label{
+    margin-right: 1.5rem;
+    text-transform: uppercase;
+}
+
+.formulario-cadastro .two{
+    margin-top: .5rem;
+    margin-bottom: .8rem;
+    width: 100%;
+}
+
+.formulario-cadastro .two div{
+    display: inline-block;
+    width: 47%;
+ 
+}
+
+.formulario-cadastro .two div label{
+    margin-right: 1.3rem;
+    text-transform: uppercase;
+}
+
+.formulario-cadastro .two div input[type="text"]{
+ 
+    width: 75%;
+}
+
+
+.btn{
+    margin: 1% 1%;
+    height: 3rem;
+    padding: .5rem;
+    width: 50%;
+    margin-left: 62% !important;
+    
+}
