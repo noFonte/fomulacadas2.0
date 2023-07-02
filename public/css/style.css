@@ -1,0 +1,229 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.full{
+    width: 80%;
+}
+
+
+.formulario-cadastro{
+    position: relative;
+    background-color: rgb(253, 206, 135);
+    width: 60%;
+    padding: 1rem;
+    margin: 0 auto;
+
+    
+    background-color: aliceblue;
+    margin: 2% auto;
+    min-height: 30rem;
+
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
+
+    
+}
+
+.formulario-cadastro h1{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.formulario-cadastro input[type="text"]{
+    text-transform: uppercase;
+    height: 2rem;
+    text-indent: .4rem;
+
+}
+
+.formulario-cadastro div label{
+    margin-right: 1.5rem;
+    text-transform: uppercase;
+}
+
+.formulario-cadastro .two{
+    margin-top: .5rem;
+    margin-bottom: .8rem;
+    width: 100%;
+}
+
+.formulario-cadastro .two div{
+    display: inline-block;
+    width: 47%;
+ 
+}
+
+.formulario-cadastro .two div label{
+    margin-right: 1.3rem;
+    text-transform: uppercase;
+}
+
+.formulario-cadastro .two div input[type="text"]{
+ 
+    width: 75%;
+}
+
+
+.btn{
+    margin: 1% 1%;
+    height: 3rem;
+    padding: .5rem;
+    width: 50%;
+    margin-left: 62% !important;
+    
+}
+
+
+
+
+
+/*Listagens*/
+
+
+
+.tx-al-center {
+    text-align: center !important;
+}
+
+.listagem {
+    position: relative;
+    padding: 1rem;
+    width: 80%;
+    margin: 0 auto;
+
+
+
+
+
+}
+
+
+
+.listagem>section {
+    position: relative;
+    color: red;
+    height: auto;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.listagem>section h1 {
+    margin-bottom: 1rem;
+}
+
+.listagem>section hr {
+    position: absolute;
+    width: 100%;
+
+
+}
+
+.input-buscar {
+    height: 2.4rem;
+    width:100%;
+    text-indent: 1rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+
+.table-list {
+    position: relative;
+    background-color: aliceblue;
+    width: 100%;
+    margin-top: 1rem;
+    box-sizing: border-box !important;
+    overflow: hidden;
+
+}
+
+.table-list table {
+    position: relative;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #000;
+    box-sizing: border-box !important;
+}
+
+.table-list table thead {
+    background-color: black;
+    height: 3rem;
+    color: #fff;
+
+    text-transform: uppercase;
+}
+
+
+.table-list table tbody tr td {
+    height: 4rem;
+    border-bottom: 1px solid #000;
+    border: 1px solid #000;
+    font-size: larger;
+    box-sizing: border-box;
+    transition: 5s;
+}
+
+.table-list table tbody tr:hover{
+    background-color: #ffff80 !important;
+}
+
+.table-list table tbody tr:nth-child(even) {
+
+    background-color: #f8efef;
+
+}
+
+
+.tb-btn {
+    height: 3rem;
+    margin: 10% 10%;
+    width: 85%;
+    box-sizing: border-box;
+    border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    border: 0px solid #000000;
+}
+
+
+.alteracao {
+    background-color:rgba(41, 72, 90,.4);
+    color: #fdfdfd;
+    transition: 2s;
+}
+
+.alerta{
+    background-color: rgba(255, 0, 0,.4);
+    color: #fdfdfd;
+    transition: 2s;
+}
+
+.alteracao:hover {
+    background-color: rgba(41, 72, 90,1);
+    color: #fdfdfd;
+}
+
+.alerta:hover{
+    background-color: rgba(255, 0, 0,1);
+    color: #fdfdfd;
+}
+
+
+.tx-name{
+    text-indent: 2rem;
+}
+
+
+
+
+/*Listagens*/
