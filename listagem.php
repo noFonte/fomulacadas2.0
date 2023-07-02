@@ -1,6 +1,8 @@
 <?php
 
+ require_once("libs.php");
  require_once("listar.php");
+
 
  
 
@@ -191,10 +193,10 @@
                         
                         ?>
                         <tr>
-                            <td class="tx-al-center"><?php  echo $pessoa["id"]; ?></td>
+                            <td class="tx-al-center"><?php  echo formatarRa($pessoa["id"]); ?></td>
                             <td class="tx-name"><?php  echo $pessoa["nome"]; ?></td>
                             <td class="tx-al-center"><?php  echo $pessoa["idade"]; ?></td>
-                            <td class="tx-al-center"><?php  echo $pessoa["cpf"]; ?></td>
+                            <td class="tx-al-center"><?php  echo formatarCpf(soNumeros($pessoa["cpf"])); ?></td>
                             <td><button class="tb-btn  alteracao ">Alterar</button></td>
                             <td><button class="tb-btn alerta ">Excluir</button></td>
                         </tr>
