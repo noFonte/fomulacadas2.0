@@ -1,9 +1,4 @@
 <?php
-
-
-
-
-
 $gradeDePessoas=array();
 $servername = "localhost";
 $username = "dev";
@@ -15,12 +10,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
-
-
 $parametros =(isset($_GET["parametros"])) ? $_GET["parametros"]:"";
-
-
-
 $sql="select * from pessoas where id like '%".$parametros."%'  or nome like '%".$parametros."%' 
      or idade like '%".$parametros."%' or cpf like '%".$parametros."%' ";
 $retorno =  mysqli_query($conn,$sql);
