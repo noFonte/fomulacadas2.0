@@ -24,7 +24,7 @@
         <div class="main-list">
 
             <section>
-                <form class="form-pesquisa" action="listagem.php" method="get">
+                <form class="form-pesquisa" action="listadepessoas.php" method="get">
                       
                        <input type="text" id="buscar" name="parametros" placeholder="O que Você Procura...? " class="input-buscar">
                        <a href="index.php" class=" ">Cadastrar Nova Pessoa</a>
@@ -50,31 +50,16 @@
                     </thead>
 
                     <tbody>
-
-                        <?php 
-                        
-                        foreach($gradeDePessoas as $key=>$pessoa){
-                        
-                        ?>
+                        {% for pessoa in gradeDePessoas %}
                         <tr>
-                            <td class="tx-al-center"><?php  echo formatarRa($pessoa["id"]); ?></td>
-                            <td class="tx-name"><?php  echo $pessoa["nome"]; ?></td>
-                            <td class="tx-al-center"><?php  echo $pessoa["idade"]; ?></td>
-                            <td class="tx-al-center"><?php  echo formatarCpf(soNumeros($pessoa["cpf"])); ?></td>
+                            <td class="tx-al-center">{{  formatarRcp(pessoa.id) }}</td>
+                            <td class="tx-name">{{ pessoa.nome }}</td>
+                            <td class="tx-al-center">{{ pessoa.idade }}  </td>
+                            <td class="tx-al-center">{{ formatarCpf(pessoa.cpf) }}</td>
                             <td><button class="tb-btn  alteracao ">Alterar</button></td>
                             <td><button class="tb-btn alerta ">Excluir</button></td>
                         </tr>
-
-                        <?php 
-                        
-                        }
-                        ?>
-
-
- 
-
-
-
+                        {% endfor %}
 
                     </tbody>
 
