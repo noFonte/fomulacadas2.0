@@ -1,6 +1,7 @@
 <?php
 
  require_once("listar.php");
+
  
 
 
@@ -163,7 +164,9 @@
         <div class="main-list">
 
             <section>
-                <input type="text" id="buscar" name="busca" placeholder="O que Você Procura...? " class="input-buscar">
+                <form action="listagem.php" method="get">
+                        <input type="text" id="buscar" name="parametros" placeholder="O que Você Procura...? " class="input-buscar">
+                </form>
             </section>
             <div class="table-list">
                 <table>
@@ -181,108 +184,28 @@
                     </thead>
 
                     <tbody>
+
+                        <?php 
+                        
+                        foreach($gradeDePessoas as $key=>$pessoa){
+                        
+                        ?>
                         <tr>
-                            <td class="tx-al-center">1</td>
-                            <td class="tx-name">TEste</td>
-                            <td class="tx-al-center">25</td>
-                            <td class="tx-al-center">3000002158</td>
+                            <td class="tx-al-center"><?php  echo $pessoa["id"]; ?></td>
+                            <td class="tx-name"><?php  echo $pessoa["nome"]; ?></td>
+                            <td class="tx-al-center"><?php  echo $pessoa["idade"]; ?></td>
+                            <td class="tx-al-center"><?php  echo $pessoa["cpf"]; ?></td>
                             <td><button class="tb-btn  alteracao ">Alterar</button></td>
                             <td><button class="tb-btn alerta ">Excluir</button></td>
                         </tr>
 
-
-                        <tr>
-                            <td class="tx-al-center">1</td>
-                            <td class="tx-name">TEste</td>
-                            <td class="tx-al-center">25</td>
-                            <td class="tx-al-center">3000002158</td>
-                            <td><button class="tb-btn  alteracao ">Alterar</button></td>
-                            <td><button class="tb-btn alerta ">Excluir</button></td>
-                        </tr>
-
-                        <tr>
-                            <td class="tx-al-center">1</td>
-                            <td class="tx-name">TEste</td>
-                            <td class="tx-al-center">25</td>
-                            <td class="tx-al-center">3000002158</td>
-                            <td><button class="tb-btn  alteracao ">Alterar</button></td>
-                            <td><button class="tb-btn alerta ">Excluir</button></td>
-                        </tr>
+                        <?php 
+                        
+                        }
+                        ?>
 
 
-                        <tr>
-                            <td class="tx-al-center">1</td>
-                            <td class="tx-name">TEste</td>
-                            <td class="tx-al-center">25</td>
-                            <td class="tx-al-center">3000002158</td>
-                            <td><button class="tb-btn  alteracao ">Alterar</button></td>
-                            <td><button class="tb-btn alerta ">Excluir</button></td>
-                        </tr>
-
-
-                        <tr>
-                            <td class="tx-al-center">1</td>
-                            <td class="tx-name">TEste</td>
-                            <td class="tx-al-center">25</td>
-                            <td class="tx-al-center">3000002158</td>
-                            <td><button class="tb-btn  alteracao ">Alterar</button></td>
-                            <td><button class="tb-btn alerta ">Excluir</button></td>
-                        </tr>
-                        <tr>
-                            <td class="tx-al-center">1</td>
-                            <td class="tx-name">TEste</td>
-                            <td class="tx-al-center">25</td>
-                            <td class="tx-al-center">3000002158</td>
-                            <td><button class="tb-btn  alteracao ">Alterar</button></td>
-                            <td><button class="tb-btn alerta ">Excluir</button></td>
-                        </tr>
-
-
-
-                        <tr>
-                            <td class="tx-al-center">1</td>
-                            <td class="tx-name">TEste</td>
-                            <td class="tx-al-center">25</td>
-                            <td class="tx-al-center">3000002158</td>
-                            <td><button class="tb-btn  alteracao ">Alterar</button></td>
-                            <td><button class="tb-btn alerta ">Excluir</button></td>
-                        </tr>
-
-                        <tr>
-                            <td class="tx-al-center">1</td>
-                            <td class="tx-name">TEste</td>
-                            <td class="tx-al-center">25</td>
-                            <td class="tx-al-center">3000002158</td>
-                            <td><button class="tb-btn  alteracao ">Alterar</button></td>
-                            <td><button class="tb-btn alerta ">Excluir</button></td>
-                        </tr>
-                        <tr>
-                            <td class="tx-al-center">1</td>
-                            <td class="tx-name">TEste</td>
-                            <td class="tx-al-center">25</td>
-                            <td class="tx-al-center">3000002158</td>
-                            <td><button class="tb-btn  alteracao ">Alterar</button></td>
-                            <td><button class="tb-btn alerta ">Excluir</button></td>
-                        </tr>
-
-
-                        <tr>
-                            <td class="tx-al-center">1</td>
-                            <td class="tx-name">TEste</td>
-                            <td class="tx-al-center">25</td>
-                            <td class="tx-al-center">3000002158</td>
-                            <td><button class="tb-btn  alteracao ">Alterar</button></td>
-                            <td><button class="tb-btn alerta ">Excluir</button></td>
-                        </tr>
-                         <tr>
-                            <td class="tx-al-center">1</td>
-                            <td class="tx-name">TEste</td>
-                            <td class="tx-al-center">25</td>
-                            <td class="tx-al-center">3000002158</td>
-                            <td><button class="tb-btn  alteracao ">Alterar</button></td>
-                            <td><button class="tb-btn alerta ">Excluir</button></td>
-                        </tr>
-
+ 
 
 
 

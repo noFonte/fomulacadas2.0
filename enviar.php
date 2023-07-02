@@ -71,6 +71,7 @@ VALUES ('".$cpf."',".$idade.", '".$nome."')";
 if ($conn->query($sql) === TRUE) {
    echo "<h3>Registro  Criado com Sucesso..!</h3>";
    echo "<a href=\"index.html\">NOVO CADASTRO</a>";
+   header("location:listagem.php");
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
