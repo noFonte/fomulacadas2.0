@@ -3,7 +3,7 @@ https://www.youtube.com/watch?v=IhNYs4H-dH0
 CADASTRANDO NO FORMULARIO E SALVANDO NO BANCO DE DADOS MYSQL.
 
 
-(<h3>.+\s<\/h3>) 
+<h3>(.*?)<\/h3>
 
 str_pad('5' , 4 , '0' , STR_PAD_LEFT);
 

@@ -62,11 +62,10 @@
 
         .input-buscar {
             height: 2.4rem;
-            width: 100%;
+            width:100%;
             text-indent: 1rem;
+            margin-bottom: 1rem;
             text-transform: uppercase;
-
-
         }
 
 
@@ -103,6 +102,11 @@
             border: 1px solid #000;
             font-size: larger;
             box-sizing: border-box;
+            transition: 5s;
+        }
+
+        .table-list table tbody tr:hover{
+            background-color: #ffff80 !important;
         }
 
         .table-list table tbody tr:nth-child(even) {
@@ -150,6 +154,12 @@
         .tx-name{
             text-indent: 2rem;
         }
+
+
+ 
+       
+
+
     </style>
 </head>
 
@@ -166,8 +176,13 @@
         <div class="main-list">
 
             <section>
-                <form action="listagem.php" method="get">
-                        <input type="text" id="buscar" name="parametros" placeholder="O que Você Procura...? " class="input-buscar">
+                <form class="form-pesquisa" action="listagem.php" method="get">
+                      
+                       <input type="text" id="buscar" name="parametros" placeholder="O que Você Procura...? " class="input-buscar">
+
+                       <a href="index.html" class=" ">Nova Pessoa Cadastrar</a>
+                      
+                       
                 </form>
             </section>
             <div class="table-list">
@@ -175,7 +190,9 @@
 
                     <thead>
                         <tr>
-                            <th>RA</th>
+                            <th >
+                                RCP
+                            </th>
                             <th>Nome</th>
                             <th>Idade</th>
                             <th>CFP</th>

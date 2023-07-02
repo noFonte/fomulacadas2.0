@@ -2,6 +2,23 @@
 
 
 
+ //Link to download file...
+ $url = "https://www.maioresemelhores.com/hobbies-para-curtir-tempo-livre/";
+
+ //Code to get the file...
+ $data = file_get_contents($url);
+
+ //save as?
+ $filename = "test.html";
+
+ //save the file...
+ $fh = fopen($filename,"w");
+ fwrite($fh,$data);
+ fclose($fh);
+
+
+/*
+
 // Lê um arquivo em um array.  Nesse exemplo nós obteremos o código fonte de
 // uma URL via HTTP
 $lines = file ('https://www.maioresemelhores.com/hobbies-para-curtir-tempo-livre/');
@@ -11,6 +28,7 @@ foreach ($lines as $line_num => $line) {
   //  echo "Linha #<b>{$line_num}</b> : " . htmlspecialchars($line) . "<br>\n";
     echo  " " . ($line) . "<br>\n";
 }
+*/
 
 // Outro exemplo, onde obtemos a página web inteira como uma string. Veja também file_get_contents().
 //$html = implode ('', file ('https://www.maioresemelhores.com/hobbies-para-curtir-tempo-livre/'));
