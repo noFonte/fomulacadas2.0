@@ -15,6 +15,49 @@ https://semprebem.paguemenos.com.br/posts/mente-e-comportamento/lista-de-hobbies
 
 
 
+
+@ivanilampaula1383
+@oescorpiaoreis
+@franciscocaetano8596
+@kaiorodrigo4231
+@marcosfilho4283
+@user-yt5yh3gp1t
+@tiagofigueira4785
+@renanfelipefb4462
+@gdservicosdigitais2238
+@GustavoSilva-jg7ou
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 thurreis8923
 há 1 mês
 opa, tu tá ajudando dmsss, só tenho a agradecer!!! continue gravando vídeo, ótima explicação
@@ -38,6 +81,15 @@ Duas observações no campo do C.P.F
 2° incluir no campo CPF uma verificação (cálculo matemático) para verificar se este CPF é 100% correto e não uma invenção do usuário que está fazendo o cadastro.
 
 2
+
+
+
+
+
+
+
+
+
 
 DDI INFORMÁTICA-ATM
 
@@ -75,8 +127,7 @@ DDI INFORMÁTICA-ATM
 
 Responder
 
-@kaiorodrigo4231
-@kaiorodrigo4231
+
 há 1 dia
 Mais como ficaria numa aplicação real, com hospedagem e um banco de dados em produção? Poderia fazer um video assim? E também poderia fazer para esquema de login.
 
@@ -91,8 +142,8 @@ DDI INFORMÁTICA-ATM
 ·
 
 1 resposta
-@marcosfilho4283
-@marcosfilho4283
+
+
 há 8 dias
 show de bola. parabens irmao
 
@@ -107,7 +158,7 @@ DDI INFORMÁTICA-ATM
 ·
 
 1 resposta
-@tiagofigueira4785
+
 @tiagofigueira4785
 há 1 mês
 Mano teu vídeo é muito bom! Mas me ajuda em uma coisa eu não consigo criar o banco de dados no workbench porque não aparece essa opção aplicar o banco de dados e sinceramente não consigo encontrar uma solução para isso!! Provavelmente deve ser fácil de resolver kkk me ajuda aí 😅
@@ -124,7 +175,7 @@ DDI INFORMÁTICA-ATM
 
 1 resposta
 @user-yt5yh3gp1t
-@user-yt5yh3gp1t
+
 há 1 dia
 Bom vídeo obrigado pela ajuda.
 
@@ -139,7 +190,7 @@ DDI INFORMÁTICA-ATM
 ·
 
 1 resposta
-@renanfelipefb4462
+
 @renanfelipefb4462
 há 7 horas
 Oque eu faço quando os dados nao chegam no Mysql - Estou conectado ao banco e o usuario foi cadastrado com sucesso.
@@ -154,7 +205,7 @@ DDI INFORMÁTICA-ATM
 ·
 
 1 resposta
-@gdservicosdigitais2238
+
 @gdservicosdigitais2238
 há 1 mês
 Olá, agradeço de coração pelo conhecimento repassado, quase consegui, o meu tá dando um erro na linha do if. 
@@ -177,7 +228,7 @@ DDI INFORMÁTICA-ATM
 ·
 
 4 respostas
-@GustavoSilva-jg7ou
+
 @GustavoSilva-jg7ou
 há 1 mês
 Estou com dificuldades hora de colocar localhost não aparece como o seu

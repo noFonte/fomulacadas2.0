@@ -19,10 +19,22 @@
 
 <body>
     <div id="container">
+
+       
         <div class="formulario-cadastro">
             <a href="listadepessoas.php" class=" ">Grade de Pessoas</a>
             <form  method="post">
                 <h1>Cadastro de Pessoas</h1>
+
+              
+
+                {% if msgbox | length > 0 %}
+        
+
+                {{ msgbox }}
+
+                {% endif %}
+                
                 <div>
                     <label for="nome">Nome</label>
                     <input type="text" class="full" name="nome" id="nome">

@@ -12,7 +12,7 @@ class PessoaRepository
     public function ByCpf($cpf)
     {
         $pessoa=null;
-        $sql="select id from pessoas where cpf='".$cpf."'";
+        $sql="select * from pessoas where cpf='".$cpf."'";
         $this->dbContext->open();
         $conn = $this->dbContext->instance();
         $retorno =  mysqli_query($conn,$sql);
@@ -24,6 +24,19 @@ class PessoaRepository
         return $pessoa;
     }
 
+
+    public function store(PessoaTabelaDto $pessoaDto)
+    {
+        $sql = "INSERT INTO pessoas (cpf,idade,nome)
+        VALUES ('".$pessoaDto->cpf."',".$pessoaDto->idade.", '".$pessoaDto->nome."')";
+        $this->dbContext->open();
+        $conn = $this->dbContext->instance();
+        if ($conn->query($sql) === TRUE) {
+            return 1;
+        }
+        $this->dbContext->close();
+        return 0;
+    }
 
     
 
