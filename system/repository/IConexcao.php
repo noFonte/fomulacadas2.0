@@ -1,7 +1,9 @@
 <?php
 
 interface IConexcao{
-    public function realizarConexcao();
-    public function finalizarConexcao();
+    public function open();
+    public function close();
+    public function instance();
+    
 }
 

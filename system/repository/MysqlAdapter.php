@@ -8,7 +8,7 @@ class MysqlAdapter implements IConexcao{
   private  $conn =null;
 
 
-  public function realizarConexcao(){
+  public function open(){
     $this->conn = new mysqli($this->servername, $this->username, $this->password, $this->dbname);
     if ($this->conn->connect_error) {
         throw new Exception ($this->conn->connect_error);
@@ -16,11 +16,18 @@ class MysqlAdapter implements IConexcao{
   }
 
 
-  public function finalizarConexcao(){
+  public function instance(){
+    return $this->conn;
+  }
+
+
+  public function close(){
      if(!is_null($this->conn)){
         $this->conn->close();
      }
   }
+
+
 
 
 
